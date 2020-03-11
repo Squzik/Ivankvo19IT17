@@ -23,7 +23,7 @@ namespace cal
             InitializeComponent();
         }
             
-        private void button2_Click_1(object sender, EventArgs e)
+        private void minus(object sender, EventArgs e)
         {
 
             label2.Text = "-";
@@ -32,20 +32,20 @@ namespace cal
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void plus(object sender, EventArgs e)
         {
 
             label2.Text = "+";
             c = 2;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ymnoj(object sender, EventArgs e)
         {
             label2.Text = "*";
             c = 3;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void del(object sender, EventArgs e)
         {
 
             label2.Text = "/";
@@ -55,7 +55,7 @@ namespace cal
 
 
 
-        private void button6_Click(object sender, EventArgs e)
+        private void clear(object sender, EventArgs e)
         {
             textBox1.Clear();
             textBox2.Clear();
@@ -64,7 +64,7 @@ namespace cal
         }
 
 
-        private void button5_Click(object sender, EventArgs e)
+        private void rovno(object sender, EventArgs e)
         {
            
             if (c == 1)
@@ -85,6 +85,6 @@ namespace cal
             }
         }
 
-       
+     
     }
 }

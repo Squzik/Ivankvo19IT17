@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IVANKOV19IT17));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -71,7 +72,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.plus);
             // 
             // button2
             // 
@@ -82,7 +83,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.minus);
             // 
             // button3
             // 
@@ -93,7 +94,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.ymnoj);
             // 
             // button4
             // 
@@ -104,7 +105,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "/";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.del);
             // 
             // label1
             // 
@@ -130,7 +131,7 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "C";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.clear);
             // 
             // label2
             // 
@@ -156,7 +157,7 @@
             this.button5.TabIndex = 15;
             this.button5.Text = "=";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.rovno);
             // 
             // IVANKOV19IT17
             // 
@@ -176,8 +177,10 @@
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.Coral;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "IVANKOV19IT17";
             this.Text = "Калькулятор Иванкова";
+     
             this.ResumeLayout(false);
             this.PerformLayout();
 
