@@ -9,12 +9,15 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Евгений Иванков|Any CPU = Евгений Иванков|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Евгений Иванков|Any CPU.ActiveCfg = Евгений Иванков|Any CPU
+		{7B17A01A-A165-4336-89AD-44F4EBAB2DF0}.Евгений Иванков|Any CPU.Build.0 = Евгений Иванков|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
