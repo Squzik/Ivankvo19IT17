@@ -12,9 +12,9 @@ namespace cal
 {
     public partial class IVANKOV19IT17 : Form
     {
+        int a, b;
+        int temp;
 
-      public int c;
-        
 
 
 
@@ -22,34 +22,43 @@ namespace cal
         {
             InitializeComponent();
         }
-            
+
         private void minus(object sender, EventArgs e)
         {
-
-            label2.Text = "-";
-            c = 1;
-
-
+           
+                a = int.Parse(textBox1.Text);
+                textBox1.Clear();
+                textBox1.Focus();
+                temp = 1;
+            
+          
         }
 
         private void plus(object sender, EventArgs e)
         {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 2;
 
-            label2.Text = "+";
-            c = 2;
         }
 
         private void ymnoj(object sender, EventArgs e)
         {
-            label2.Text = "*";
-            c = 3;
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 3;
+
         }
 
         private void del(object sender, EventArgs e)
         {
+            a = int.Parse(textBox1.Text);
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 4;
 
-            label2.Text = "/";
-            c = 4;
 
         }
 
@@ -58,33 +67,40 @@ namespace cal
         private void clear(object sender, EventArgs e)
         {
             textBox1.Clear();
-            textBox2.Clear();
-            label1.Text = "0";
-            label2.Text = "0";
+
         }
 
 
         private void rovno(object sender, EventArgs e)
         {
-           
-            if (c == 1)
+            cal(temp);
+          
+        }
+        public void cal(int temp)
+        {
+            switch(temp)
             {
-                label1.Text = (Convert.ToInt32(textBox1.Text) - Convert.ToInt32(textBox2.Text)).ToString();
-            }
-            if (c == 2)
-            {
-                label1.Text = (Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text)).ToString();
-            }
-            if (c == 3)
-            {
-                label1.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox2.Text)).ToString();
-            }
-            if (c == 4)
-            {
-                label1.Text = (Convert.ToInt32(textBox1.Text) / Convert.ToInt32(textBox2.Text)).ToString();
+                case 1:
+                    b = a - int.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 2:
+                    b = a + int.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 3:
+                    b = a * int.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 4:
+                    b = a / int.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                default:
+                    break;
             }
         }
 
-     
+
     }
 }
