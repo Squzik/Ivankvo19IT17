@@ -25,8 +25,10 @@ namespace cal
 
         private void minus(object sender, EventArgs e)//Кнопка -
         {
-           
+
+                
                 a = int.Parse(textBox1.Text);
+                label2.Text = $"{a}-";
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 1;
@@ -36,7 +38,9 @@ namespace cal
 
         private void plus(object sender, EventArgs e)//Кнопка +
         {
+            
             a = int.Parse(textBox1.Text);
+            label2.Text = $"{a}+";
             textBox1.Clear();
             textBox1.Focus();
             temp = 2;
@@ -45,7 +49,9 @@ namespace cal
 
         private void ymnoj(object sender, EventArgs e)// Кнопка *
         {
+            
             a = int.Parse(textBox1.Text);
+            label2.Text = $"{a}*";
             textBox1.Clear();
             textBox1.Focus();
             temp = 3;
@@ -54,7 +60,9 @@ namespace cal
 
         private void del(object sender, EventArgs e)// Кнопка /
         {
+            
             a = int.Parse(textBox1.Text);
+            label2.Text = $"{a}/";
             textBox1.Clear();
             textBox1.Focus();
             temp = 4;
@@ -69,6 +77,7 @@ namespace cal
             textBox1.Clear();
             a = 0;
             b = 0;
+            label2.Text = "Знак:";
         }
 
 
@@ -83,6 +92,7 @@ namespace cal
         private void a1(object sender, EventArgs e)
         {
             textBox1.Text = "1";
+            
         }
 
         private void a2(object sender, EventArgs e)
@@ -129,6 +139,8 @@ namespace cal
         {
             textBox1.Text = "0";
         }
+
+   
 
         public void cal(int temp)// Кнопка =
         {
