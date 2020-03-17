@@ -12,7 +12,7 @@ namespace cal
 {
     public partial class IVANKOV19IT17 : Form
     {
-        public double a, b;
+        public double a, b,c;
         public int temp;
 
 
@@ -44,6 +44,7 @@ namespace cal
             textBox1.Clear();
             textBox1.Focus();
             temp = 2;
+  
 
         }
 
@@ -53,7 +54,7 @@ namespace cal
             a = int.Parse(textBox1.Text);
             label2.Text = $"{a}*";
             textBox1.Clear();
-            textBox1.Focus();
+            textBox1.Focus();       
             temp = 3;
 
         }
@@ -84,7 +85,7 @@ namespace cal
         private void summary(object sender, EventArgs e)// Кнопка =
         {
             cal(temp);
-          
+           
         }
 
       
@@ -257,9 +258,29 @@ namespace cal
         {
             textBox2.Text = textBox2.Text + "8";
         }
+
+       
+
         private void b9_Click(object sender, EventArgs e)
         {
             textBox2.Text = textBox2.Text + "9";
+        }
+
+       
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox2.Text);
+            label3.Text = $"√:{a}";
+            textBox2.Clear();
+            temp = 13;
+        }
+        private void log_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(textBox2.Text);
+            label3.Text = $"log:{a}";
+            textBox2.Clear();
+            temp = 14;
         }
 
         public void cal(int temp)// Кнопка =
@@ -269,6 +290,7 @@ namespace cal
                 case 1:
                     b = a - int.Parse(textBox1.Text);
                     textBox1.Text = b.ToString();
+
                     break;
                 case 2:
                     b = a + int.Parse(textBox1.Text);
@@ -312,6 +334,14 @@ namespace cal
                     break;
                 case 12:
                     b = a / int.Parse(textBox2.Text);
+                    textBox2.Text = b.ToString();
+                    break;
+                case 13:
+                    b = Math.Sqrt(a);
+                    textBox2.Text = b.ToString();
+                    break;
+                case 14:
+                    b = Math.Log(a);
                     textBox2.Text = b.ToString();
                     break;
                 default:
