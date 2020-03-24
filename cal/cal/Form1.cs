@@ -57,7 +57,7 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка"); // исключение на ввод букв
             }
 
         }
