@@ -31,16 +31,19 @@ namespace cal
 
 
                 a = int.Parse(textBox1.Text);
-                label2.Text = $"{a}-";
+                
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 1;
             }
-            catch (FormatException)
+            catch (FormatException)// исключение на ввод букв
             {
                 MessageBox.Show("Введено нечисловое значение!", "Ошибка");
             }
-
+            finally
+            {
+                label2.Text = $"{a}-";
+            }
         }
 
         private void plus(object sender, EventArgs e)//Кнопка +
@@ -50,7 +53,7 @@ namespace cal
 
 
                 a = int.Parse(textBox1.Text);
-                label2.Text = $"{a}+";
+               
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 2;
@@ -59,7 +62,10 @@ namespace cal
             {
                 MessageBox.Show("Введено нечисловое значение!", "Ошибка"); // исключение на ввод букв
             }
-
+            finally
+            {
+                label2.Text = $"{a}+";
+            }
         }
 
         private void ymnoj(object sender, EventArgs e)// Кнопка *
@@ -69,14 +75,18 @@ namespace cal
 
 
                 a = int.Parse(textBox1.Text);
-                label2.Text = $"{a}*";
+           
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 3;
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");  // исключение на ввод букв
+            }
+            finally
+            {
+                label2.Text = $"{a}*";
             }
 
         }
@@ -86,18 +96,19 @@ namespace cal
             try
             {
                 a = int.Parse(textBox1.Text);
-                label2.Text = $"{a}/";
+                
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 4;
             }
-            catch(DivideByZeroException)
-            {
-                MessageBox.Show("Деление на 0!","Ошибка");
-            }
+   
            catch(FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
+            }
+            finally
+            {
+                label2.Text = $"{a}/";
             }
 
 
@@ -116,8 +127,12 @@ namespace cal
 
         private void summary(object sender, EventArgs e)// Кнопка =
         {
-            cal(temp);
            
+            
+                cal(temp);
+            
+          
+
         }
 
       
@@ -190,7 +205,11 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
+            }
+            finally
+            {
+                label2.Text = $"ctg:{a}";
             }
         }
         private void Tg_Click(object sender, EventArgs e)
@@ -199,13 +218,17 @@ namespace cal
             {
 
                 a = int.Parse(textBox1.Text);
-                label2.Text = $"tg:{a}";
+              
                 textBox1.Clear();
                 temp = 7;
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
+            }
+            finally
+            {
+                label2.Text = $"tg:{a}";
             }
         }
         private void Sin_Click(object sender, EventArgs e)
@@ -220,7 +243,7 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
             }
             finally
             {
@@ -237,7 +260,7 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
             }
             finally
             {
@@ -289,7 +312,10 @@ namespace cal
 
         private void summary2_Click(object sender, EventArgs e)
         {
-            cal(temp);
+           
+                cal(temp);
+            
+          
         }
         private void b0_Click(object sender, EventArgs e)
         {
@@ -369,7 +395,7 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
             }
             finally
             {
@@ -387,7 +413,7 @@ namespace cal
             }
             catch (FormatException)
             {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
             }
             finally
             {
@@ -413,7 +439,6 @@ namespace cal
                     textBox1.Text = b.ToString();
                     break;
                 case 4:
-                 
                    b = a / int.Parse(textBox1.Text);
                    textBox1.Text = b.ToString();
                     break;
