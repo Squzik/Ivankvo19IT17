@@ -15,7 +15,7 @@ namespace cal
         public double a, b,c;
         public int temp;
 
-
+      
 
 
         public IVANKOV19IT17()
@@ -25,91 +25,58 @@ namespace cal
 
         private void minus(object sender, EventArgs e)//Кнопка -
         {
-            try
-            {
-
-
-
-                a = int.Parse(textBox1.Text);
+            
+            a = int.Parse(textBox1.Text);
                 
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 1;
-            }
-            catch (FormatException)// исключение на ввод букв
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
-            }
-            finally
-            {
+     
                 label2.Text = $"{a}-";
-            }
+               
         }
 
         private void plus(object sender, EventArgs e)//Кнопка +
         {
-            try
-            {
-
+           
 
                 a = int.Parse(textBox1.Text);
                
                 textBox1.Clear();
                 textBox1.Focus();
-                temp = 2;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка"); // исключение на ввод букв
-            }
-            finally
-            {
+                temp = 2;            
                 label2.Text = $"{a}+";
-            }
+            
         }
 
         private void ymnoj(object sender, EventArgs e)// Кнопка *
         {
-            try
-            {
-
+            
 
                 a = int.Parse(textBox1.Text);
            
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 3;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");  // исключение на ввод букв
-            }
-            finally
-            {
+           
+           
                 label2.Text = $"{a}*";
-            }
+          
 
         }
 
         private void del(object sender, EventArgs e)// Кнопка /
         {
-            try
-            {
+         
                 a = int.Parse(textBox1.Text);
                 
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 4;
-            }
-   
-           catch(FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+          
+           
                 label2.Text = $"{a}/";
-            }
+            
 
 
         }
@@ -127,9 +94,18 @@ namespace cal
 
         private void summary(object sender, EventArgs e)// Кнопка =
         {
-           
-            
+
+            try
+            {
                 cal(temp);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
+            }
+            
+            
+             
             
           
 
@@ -194,78 +170,56 @@ namespace cal
        
         private void Ctg_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
 
 
                 a = int.Parse(textBox1.Text);
                 label2.Text = $"ctg:{a}";
                 textBox1.Clear();
                 temp = 8;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+          
+           
                 label2.Text = $"ctg:{a}";
-            }
+            
         }
         private void Tg_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
 
                 a = int.Parse(textBox1.Text);
               
                 textBox1.Clear();
                 temp = 7;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+                
+            
+           
                 label2.Text = $"tg:{a}";
-            }
+           
         }
         private void Sin_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
 
                 a = int.Parse(textBox1.Text);
            
                 textBox1.Clear();
                 temp = 6;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+           
+               
+            
                 label2.Text = $"sin:{a}";
-            }
+            
         }
         private void Cos_Click(object sender, EventArgs e)
         {
-            try
-            {
+          
                 a = int.Parse(textBox1.Text); 
                 textBox1.Clear();
                 temp = 5;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+           
+           
                 label2.Text = $"cos:{a}";
-            }
+            
         }
         private void minus2_Click(object sender, EventArgs e)
         {
@@ -367,128 +321,147 @@ namespace cal
 
         private void sqrt_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
 
                 a = int.Parse(textBox1.Text);
                 textBox1.Clear();
                 temp = 13;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");
-            }
-            finally
-            {
+           
                 label2.Text = $"√:{a}";
-            }
+           
 
         }
 
         private void x2_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 a = int.Parse(textBox1.Text);
                 textBox1.Clear();
                 temp = 15;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+           
                 label2.Text = $"x^2:{a}";
-            }
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+     
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 2);
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 8);
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 16);
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = Convert.ToString(i, 10);
         }
 
         private void log_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 a = int.Parse(textBox1.Text); 
                 textBox1.Clear();
                 temp = 14;
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
-            finally
-            {
+          
+           
                 label2.Text = $"log:{a}";
-            }
+            
         }
 
         public void cal(int temp)// Кнопка =
         {
+            
             switch(temp)
-            {
+            {   
                 case 1:
                     b = a - int.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 2:
                     b = a + int.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 3:
                     b = a * int.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 4:
                    b = a / int.Parse(textBox1.Text);
-                   textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 5:
                     b = Math.Cos(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 6:
                     b = Math.Sin(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 7:
                     b = Math.Tan(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 8:
-                    b =  1/Math.Tan(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                    b = 1 / Math.Tan(a);
+                textBox1.Text = b.ToString();
+                break;
                 case 9:
                     b = a - int.Parse(textBox2.Text);
-                    textBox2.Text = b.ToString();
-                    break;
+                textBox2.Text = b.ToString();
+                break;
                 case 10:
                     b = a + int.Parse(textBox2.Text);
-                    textBox2.Text = b.ToString();
-                    break;
+                textBox2.Text = b.ToString();
+                break;
                 case 11:
                     b = a * int.Parse(textBox2.Text);
-                    textBox2.Text = b.ToString();
-                    break;
+                textBox2.Text = b.ToString();
+                break;
                 case 12:
                     b = a / int.Parse(textBox2.Text);
-                    textBox2.Text = b.ToString();
-                    break;
+                textBox2.Text = b.ToString();
+                break;
                 case 13:
                     b = Math.Sqrt(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 14:
                     b = Math.Log(a);
-                    textBox1.Text = b.ToString();
-                    break;
+                textBox1.Text = b.ToString();
+                break;
                 case 15:
-                    b = Math.Pow(a,2);
-                    textBox1.Text = b.ToString();
-                    break;
+                    b = Math.Pow(a, 2);
+                textBox1.Text = b.ToString();
+                break;
                 default:
                     break;
-            }
+            
+        }
         }
 
 
