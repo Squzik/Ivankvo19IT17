@@ -47,7 +47,7 @@ namespace cal
                 label2.Text = $"{a}-";
                
         }
-        //l
+        //ll
         private void plus(object sender, EventArgs e)//Кнопка +
         {
             obrabotka(textBox1.Text);
