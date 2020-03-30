@@ -318,7 +318,7 @@
             this.label1.Size = new System.Drawing.Size(125, 21);
             this.label1.TabIndex = 26;
             this.label1.Text = "Вводим число";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // label2
             // 
@@ -332,7 +332,7 @@
             this.label2.Size = new System.Drawing.Size(19, 21);
             this.label2.TabIndex = 27;
             this.label2.Text = "0";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+
             // 
             // tabControl1
             // 
@@ -405,7 +405,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "dex";
             this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.dex_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -419,7 +419,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "hex";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.hex_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -433,7 +433,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "oct";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.oct_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -447,7 +447,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "bin";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.bin_CheckedChanged);
             // 
             // button19
             // 

@@ -15,7 +15,19 @@ namespace cal
         public double a, b,c;
         public int temp;
 
-      
+        public void obrabotka(string textBox1)
+        {
+            try
+            {
+                int i = Convert.ToInt32(textBox1);
+                textBox1 = Convert.ToString(i);
+            }
+            catch (FormatException)
+            {
+               
+                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
+            }
+        }
 
 
         public IVANKOV19IT17()
@@ -25,7 +37,7 @@ namespace cal
 
         private void minus(object sender, EventArgs e)//Кнопка -
         {
-            
+            obrabotka(textBox1.Text);
             a = int.Parse(textBox1.Text);
                 
                 textBox1.Clear();
@@ -38,22 +50,22 @@ namespace cal
 
         private void plus(object sender, EventArgs e)//Кнопка +
         {
-           
-
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
                
                 textBox1.Clear();
                 textBox1.Focus();
                 temp = 2;            
                 label2.Text = $"{a}+";
+
             
         }
 
         private void ymnoj(object sender, EventArgs e)// Кнопка *
         {
-            
 
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
            
                 textBox1.Clear();
                 textBox1.Focus();
@@ -67,8 +79,8 @@ namespace cal
 
         private void del(object sender, EventArgs e)// Кнопка /
         {
-         
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
                 
                 textBox1.Clear();
                 textBox1.Focus();
@@ -85,6 +97,7 @@ namespace cal
 
         private void clear(object sender, EventArgs e)// Очистка
         {
+       
             textBox1.Clear();
             a = 0;
             b = 0;
@@ -95,14 +108,10 @@ namespace cal
         private void summary(object sender, EventArgs e)// Кнопка =
         {
 
-            try
-            {
-                cal(temp);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
-            }
+            obrabotka(textBox1.Text);
+
+            cal(temp);
+        
             
             
              
@@ -170,10 +179,10 @@ namespace cal
        
         private void Ctg_Click(object sender, EventArgs e)
         {
-           
 
 
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
                 label2.Text = $"ctg:{a}";
                 textBox1.Clear();
                 temp = 8;
@@ -184,9 +193,9 @@ namespace cal
         }
         private void Tg_Click(object sender, EventArgs e)
         {
-           
 
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
               
                 textBox1.Clear();
                 temp = 7;
@@ -198,9 +207,9 @@ namespace cal
         }
         private void Sin_Click(object sender, EventArgs e)
         {
-           
+            obrabotka(textBox1.Text);
 
-                a = int.Parse(textBox1.Text);
+            a = int.Parse(textBox1.Text);
            
                 textBox1.Clear();
                 temp = 6;
@@ -212,8 +221,8 @@ namespace cal
         }
         private void Cos_Click(object sender, EventArgs e)
         {
-          
-                a = int.Parse(textBox1.Text); 
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text); 
                 textBox1.Clear();
                 temp = 5;
            
@@ -223,6 +232,7 @@ namespace cal
         }
         private void minus2_Click(object sender, EventArgs e)
         {
+            obrabotka(textBox1.Text);
             a = int.Parse(textBox2.Text);
             label3.Text = $"{a}-";
             textBox2.Clear();
@@ -231,6 +241,7 @@ namespace cal
         }
         private void plus2_Click(object sender, EventArgs e)
         {
+            obrabotka(textBox1.Text);
             a = int.Parse(textBox2.Text);
             label3.Text = $"{a}+";
             textBox2.Clear();
@@ -239,6 +250,7 @@ namespace cal
         }
         private void ymnoj2_Click(object sender, EventArgs e)
         {
+            obrabotka(textBox1.Text);
             a = int.Parse(textBox2.Text);
             label3.Text = $"{a}*";
             textBox2.Clear();
@@ -249,6 +261,7 @@ namespace cal
 
         private void del2_Click(object sender, EventArgs e)
         {
+            obrabotka(textBox1.Text);
             a = int.Parse(textBox2.Text);
             label3.Text = $"{a}/";
             textBox2.Clear();
@@ -321,9 +334,9 @@ namespace cal
 
         private void sqrt_Click(object sender, EventArgs e)
         {
-           
+            obrabotka(textBox1.Text);
 
-                a = int.Parse(textBox1.Text);
+            a = int.Parse(textBox1.Text);
                 textBox1.Clear();
                 temp = 13;
            
@@ -334,8 +347,8 @@ namespace cal
 
         private void x2_Click(object sender, EventArgs e)
         {
-           
-                a = int.Parse(textBox1.Text);
+            obrabotka(textBox1.Text);
+            a = int.Parse(textBox1.Text);
                 textBox1.Clear();
                 temp = 15;
            
@@ -343,39 +356,31 @@ namespace cal
             
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+   
+     
         
 
      
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void bin_CheckedChanged(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(textBox1.Text);
             textBox1.Text = Convert.ToString(i, 2);
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void oct_CheckedChanged(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(textBox1.Text);
             textBox1.Text = Convert.ToString(i, 8);
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void hex_CheckedChanged(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(textBox1.Text);
             textBox1.Text = Convert.ToString(i, 16);
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void dex_CheckedChanged(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(textBox1.Text);
             textBox1.Text = Convert.ToString(i, 10);
