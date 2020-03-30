@@ -38,7 +38,7 @@ namespace cal
         private void minus(object sender, EventArgs e)//Кнопка -
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                 
                 textBox1.Clear();
                 textBox1.Focus();
@@ -51,7 +51,7 @@ namespace cal
         private void plus(object sender, EventArgs e)//Кнопка +
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                
                 textBox1.Clear();
                 textBox1.Focus();
@@ -65,7 +65,7 @@ namespace cal
         {
 
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
            
                 textBox1.Clear();
                 textBox1.Focus();
@@ -80,7 +80,7 @@ namespace cal
         private void del(object sender, EventArgs e)// Кнопка /
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                 
                 textBox1.Clear();
                 textBox1.Focus();
@@ -182,7 +182,7 @@ namespace cal
 
 
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                 label2.Text = $"ctg:{a}";
                 textBox1.Clear();
                 temp = 8;
@@ -195,7 +195,7 @@ namespace cal
         {
 
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
               
                 textBox1.Clear();
                 temp = 7;
@@ -209,7 +209,7 @@ namespace cal
         {
             obrabotka(textBox1.Text);
 
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
            
                 textBox1.Clear();
                 temp = 6;
@@ -222,7 +222,7 @@ namespace cal
         private void Cos_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text); 
+            a = Convert.ToInt32(textBox1.Text); 
                 textBox1.Clear();
                 temp = 5;
            
@@ -233,7 +233,7 @@ namespace cal
         private void minus2_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox2.Text);
+            a = Convert.ToInt32(textBox2.Text);
             label3.Text = $"{a}-";
             textBox2.Clear();
             textBox2.Focus();
@@ -242,7 +242,7 @@ namespace cal
         private void plus2_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox2.Text);
+            a = Convert.ToInt32(textBox2.Text);
             label3.Text = $"{a}+";
             textBox2.Clear();
             textBox2.Focus();
@@ -251,7 +251,7 @@ namespace cal
         private void ymnoj2_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox2.Text);
+            a = Convert.ToInt32(textBox2.Text);
             label3.Text = $"{a}*";
             textBox2.Clear();
             textBox2.Focus();
@@ -262,7 +262,7 @@ namespace cal
         private void del2_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox2.Text);
+            a = Convert.ToInt32(textBox2.Text);
             label3.Text = $"{a}/";
             textBox2.Clear();
             textBox2.Focus();
@@ -336,7 +336,7 @@ namespace cal
         {
             obrabotka(textBox1.Text);
 
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                 textBox1.Clear();
                 temp = 13;
            
@@ -348,7 +348,7 @@ namespace cal
         private void x2_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = int.Parse(textBox1.Text);
+            a = Convert.ToInt32(textBox1.Text);
                 textBox1.Clear();
                 temp = 15;
            
@@ -389,7 +389,7 @@ namespace cal
         private void log_Click(object sender, EventArgs e)
         {
            
-                a = int.Parse(textBox1.Text); 
+                a = Convert.ToInt32(textBox1.Text); 
                 textBox1.Clear();
                 temp = 14;
           
@@ -404,19 +404,19 @@ namespace cal
             switch(temp)
             {   
                 case 1:
-                    b = a - int.Parse(textBox1.Text);
+                    b = a - Convert.ToInt32(textBox1.Text);
                 textBox1.Text = b.ToString();
                 break;
                 case 2:
-                    b = a + int.Parse(textBox1.Text);
+                    b = a + Convert.ToInt32(textBox1.Text);
                 textBox1.Text = b.ToString();
                 break;
                 case 3:
-                    b = a * int.Parse(textBox1.Text);
+                    b = a * Convert.ToInt32(textBox1.Text);
                 textBox1.Text = b.ToString();
                 break;
                 case 4:
-                   b = a / int.Parse(textBox1.Text);
+                   b = a / Convert.ToInt32(textBox1.Text);
                 textBox1.Text = b.ToString();
                 break;
                 case 5:
@@ -436,19 +436,19 @@ namespace cal
                 textBox1.Text = b.ToString();
                 break;
                 case 9:
-                    b = a - int.Parse(textBox2.Text);
+                    b = a - Convert.ToInt32(textBox2.Text);
                 textBox2.Text = b.ToString();
                 break;
                 case 10:
-                    b = a + int.Parse(textBox2.Text);
+                    b = a + Convert.ToInt32(textBox2.Text);
                 textBox2.Text = b.ToString();
                 break;
                 case 11:
-                    b = a * int.Parse(textBox2.Text);
+                    b = a * Convert.ToInt32(textBox2.Text);
                 textBox2.Text = b.ToString();
                 break;
                 case 12:
-                    b = a / int.Parse(textBox2.Text);
+                    b = a / Convert.ToInt32(textBox2.Text);
                 textBox2.Text = b.ToString();
                 break;
                 case 13:
