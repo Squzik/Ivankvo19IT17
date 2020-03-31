@@ -230,106 +230,9 @@ namespace cal
                 label2.Text = $"cos:{a}";
             
         }
-        private void minus2_Click(object sender, EventArgs e)
-        {
-            obrabotka(textBox1.Text);
-            a = Convert.ToInt32(textBox2.Text);
-            label3.Text = $"{a}-";
-            textBox2.Clear();
-            textBox2.Focus();
-            temp = 9;
-        }
-        private void plus2_Click(object sender, EventArgs e)
-        {
-            obrabotka(textBox1.Text);
-            a = Convert.ToInt32(textBox2.Text);
-            label3.Text = $"{a}+";
-            textBox2.Clear();
-            textBox2.Focus();
-            temp = 10;
-        }
-        private void ymnoj2_Click(object sender, EventArgs e)
-        {
-            obrabotka(textBox1.Text);
-            a = Convert.ToInt32(textBox2.Text);
-            label3.Text = $"{a}*";
-            textBox2.Clear();
-            textBox2.Focus();
-            temp = 11;
-        }
-
-
-        private void del2_Click(object sender, EventArgs e)
-        {
-            obrabotka(textBox1.Text);
-            a = Convert.ToInt32(textBox2.Text);
-            label3.Text = $"{a}/";
-            textBox2.Clear();
-            textBox2.Focus();
-            temp = 12;
-        }
-
-        private void clear2_Click(object sender, EventArgs e)
-        {
-            textBox2.Clear();
-            a = 0;
-            b = 0;
-            label3.Text = "0";
-        }
-
-        private void summary2_Click(object sender, EventArgs e)
-        {
-           
-                cal(temp);
-            
-          
-        }
-        private void b0_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "0";
-        }
-        private void b1_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "1";
-        }
-        private void b2_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "2";
-        }
-        private void b3_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "3";
-
-        }      
-        private void b4_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "4";
-
-        } 
-        private void b5_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "5";
-        }
-        private void b6_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "6";
-        }
-        private void b7_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "7";
-        }
-        private void b8_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "8";
-        }
-
-       
-
-        private void b9_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text + "9";
-        }
-
+     
+  
+   
 
 
         private void sqrt_Click(object sender, EventArgs e)
@@ -386,6 +289,19 @@ namespace cal
             textBox1.Text = Convert.ToString(i, 10);
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+            string a = textBox2.Text.Length.ToString();
+            label3.Text = $"Количество символов:{a}";
+        }
+
         private void log_Click(object sender, EventArgs e)
         {
            
@@ -434,22 +350,6 @@ namespace cal
                 case 8:
                     b = 1 / Math.Tan(a);
                 textBox1.Text = b.ToString();
-                break;
-                case 9:
-                    b = a - Convert.ToInt32(textBox2.Text);
-                textBox2.Text = b.ToString();
-                break;
-                case 10:
-                    b = a + Convert.ToInt32(textBox2.Text);
-                textBox2.Text = b.ToString();
-                break;
-                case 11:
-                    b = a * Convert.ToInt32(textBox2.Text);
-                textBox2.Text = b.ToString();
-                break;
-                case 12:
-                    b = a / Convert.ToInt32(textBox2.Text);
-                textBox2.Text = b.ToString();
                 break;
                 case 13:
                     b = Math.Sqrt(a);
