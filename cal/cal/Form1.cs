@@ -314,6 +314,36 @@ namespace cal
             textBox3.Text = a;
         }
 
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            int count = 0;
+            //Подсчет цифр
+            foreach (char ch in textBox2.Text)
+            {
+                if (Char.IsDigit(ch))
+                    count++;
+            }
+            //Подсчет гласных и согласных
+            string vowel = "уеыаоэяиёюУЕЫАОЭЯИЁЮ";
+            string consonant = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
+            int i=0, j=0; 
+            //подсчитываем общее количество гласных и согласных 
+            textBox2.Text.ToCharArray().All(z => {
+                if (vowel.ToCharArray().Contains(z)) i++;
+                else if
+            (consonant.ToCharArray().Contains(z)) j++; return true;});
+            //Вывод
+            MessageBox.Show
+                ($"Сколько строк:{((string[])textBox2.Lines).Length.ToString()} \n" +
+                $"Сколько слов:{ textBox2.Text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length } \n" +
+                $"Сколько цифр:{count}\n" +
+                $"Гласных: {i}\n" +
+                $"Согласных: {j}", "Статистика:");
+
+            
+
+        }
+
         private void log_Click(object sender, EventArgs e)
         {
            
