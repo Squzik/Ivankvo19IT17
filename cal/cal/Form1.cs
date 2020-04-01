@@ -299,7 +299,19 @@ namespace cal
         {
 
             string a = textBox2.Text.Length.ToString();
-            label3.Text = $"Количество символов:{a}";
+            label3.Text = $"Длина строки:{a}";
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            string a = textBox2.Text.ToUpper().ToString();
+            textBox3.Text = a;
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            string a = textBox2.Text.ToLower().ToString();
+            textBox3.Text = a;
         }
 
         private void log_Click(object sender, EventArgs e)

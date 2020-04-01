@@ -62,8 +62,17 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -74,7 +83,7 @@
             this.textBox1.BackColor = System.Drawing.Color.Silver;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.Color.Navy;
-            this.textBox1.Location = new System.Drawing.Point(16, 17);
+            this.textBox1.Location = new System.Drawing.Point(28, 45);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -86,7 +95,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(13, 252);
+            this.button1.Location = new System.Drawing.Point(25, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(51, 42);
             this.button1.TabIndex = 6;
@@ -99,7 +108,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button2.Location = new System.Drawing.Point(127, 252);
+            this.button2.Location = new System.Drawing.Point(139, 280);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 42);
             this.button2.TabIndex = 7;
@@ -112,7 +121,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button3.Location = new System.Drawing.Point(184, 156);
+            this.button3.Location = new System.Drawing.Point(196, 184);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(51, 42);
             this.button3.TabIndex = 8;
@@ -125,7 +134,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button4.Location = new System.Drawing.Point(184, 202);
+            this.button4.Location = new System.Drawing.Point(196, 230);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(51, 42);
             this.button4.TabIndex = 9;
@@ -139,7 +148,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(184, 108);
+            this.button6.Location = new System.Drawing.Point(196, 136);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(51, 42);
             this.button6.TabIndex = 12;
@@ -152,7 +161,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button5.Location = new System.Drawing.Point(184, 252);
+            this.button5.Location = new System.Drawing.Point(196, 280);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(51, 42);
             this.button5.TabIndex = 15;
@@ -165,7 +174,7 @@
             this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.ForeColor = System.Drawing.Color.Navy;
             this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(13, 108);
+            this.button7.Location = new System.Drawing.Point(25, 136);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(51, 42);
             this.button7.TabIndex = 16;
@@ -178,7 +187,7 @@
             this.button8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.ForeColor = System.Drawing.Color.Navy;
             this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(70, 108);
+            this.button8.Location = new System.Drawing.Point(82, 136);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(51, 42);
             this.button8.TabIndex = 17;
@@ -191,7 +200,7 @@
             this.button9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.ForeColor = System.Drawing.Color.Navy;
             this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(127, 108);
+            this.button9.Location = new System.Drawing.Point(139, 136);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(51, 42);
             this.button9.TabIndex = 18;
@@ -204,7 +213,7 @@
             this.button10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button10.ForeColor = System.Drawing.Color.Navy;
             this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(13, 156);
+            this.button10.Location = new System.Drawing.Point(25, 184);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(51, 42);
             this.button10.TabIndex = 19;
@@ -217,7 +226,7 @@
             this.button11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button11.ForeColor = System.Drawing.Color.Navy;
             this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(70, 156);
+            this.button11.Location = new System.Drawing.Point(82, 184);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(51, 42);
             this.button11.TabIndex = 20;
@@ -230,7 +239,7 @@
             this.button12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button12.ForeColor = System.Drawing.Color.Navy;
             this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(127, 156);
+            this.button12.Location = new System.Drawing.Point(139, 184);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(51, 42);
             this.button12.TabIndex = 21;
@@ -243,7 +252,7 @@
             this.button13.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button13.ForeColor = System.Drawing.Color.Navy;
             this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(13, 204);
+            this.button13.Location = new System.Drawing.Point(25, 232);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(51, 42);
             this.button13.TabIndex = 22;
@@ -256,7 +265,7 @@
             this.button14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button14.ForeColor = System.Drawing.Color.Navy;
             this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button14.Location = new System.Drawing.Point(70, 204);
+            this.button14.Location = new System.Drawing.Point(82, 232);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(51, 42);
             this.button14.TabIndex = 23;
@@ -269,7 +278,7 @@
             this.button15.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.ForeColor = System.Drawing.Color.Navy;
             this.button15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button15.Location = new System.Drawing.Point(127, 204);
+            this.button15.Location = new System.Drawing.Point(139, 232);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(51, 42);
             this.button15.TabIndex = 24;
@@ -282,7 +291,7 @@
             this.button16.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button16.ForeColor = System.Drawing.Color.Navy;
             this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(70, 252);
+            this.button16.Location = new System.Drawing.Point(82, 280);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(51, 42);
             this.button16.TabIndex = 25;
@@ -295,7 +304,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(13, -3);
+            this.label1.Location = new System.Drawing.Point(25, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 24);
             this.label1.TabIndex = 26;
@@ -308,7 +317,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(13, 55);
+            this.label2.Location = new System.Drawing.Point(25, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 24);
             this.label2.TabIndex = 27;
@@ -326,7 +335,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(366, 359);
+            this.tabControl1.Size = new System.Drawing.Size(399, 394);
             this.tabControl1.TabIndex = 32;
             this.tabControl1.TabStop = false;
             // 
@@ -370,7 +379,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(358, 331);
+            this.tabPage1.Size = new System.Drawing.Size(391, 366);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "1 Стр";
             // 
@@ -379,7 +388,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton4.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton4.Location = new System.Drawing.Point(234, 56);
+            this.radioButton4.Location = new System.Drawing.Point(242, 84);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(59, 28);
             this.radioButton4.TabIndex = 61;
@@ -393,7 +402,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton3.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton3.Location = new System.Drawing.Point(295, 56);
+            this.radioButton3.Location = new System.Drawing.Point(303, 84);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(59, 28);
             this.radioButton3.TabIndex = 60;
@@ -407,7 +416,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton2.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton2.Location = new System.Drawing.Point(178, 56);
+            this.radioButton2.Location = new System.Drawing.Point(186, 84);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(56, 28);
             this.radioButton2.TabIndex = 59;
@@ -421,7 +430,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton1.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton1.Location = new System.Drawing.Point(121, 56);
+            this.radioButton1.Location = new System.Drawing.Point(129, 84);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(55, 28);
             this.radioButton1.TabIndex = 58;
@@ -436,7 +445,7 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button19.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button19.Location = new System.Drawing.Point(298, 202);
+            this.button19.Location = new System.Drawing.Point(310, 230);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(51, 42);
             this.button19.TabIndex = 57;
@@ -450,7 +459,7 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button18.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button18.Location = new System.Drawing.Point(298, 156);
+            this.button18.Location = new System.Drawing.Point(310, 184);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(51, 42);
             this.button18.TabIndex = 56;
@@ -464,7 +473,7 @@
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button17.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button17.Location = new System.Drawing.Point(298, 108);
+            this.button17.Location = new System.Drawing.Point(310, 136);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(51, 42);
             this.button17.TabIndex = 55;
@@ -478,7 +487,7 @@
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button25.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button25.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button25.Location = new System.Drawing.Point(241, 156);
+            this.button25.Location = new System.Drawing.Point(253, 184);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(51, 42);
             this.button25.TabIndex = 52;
@@ -492,7 +501,7 @@
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button27.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button27.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button27.Location = new System.Drawing.Point(241, 108);
+            this.button27.Location = new System.Drawing.Point(253, 136);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(51, 42);
             this.button27.TabIndex = 51;
@@ -506,7 +515,7 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button22.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button22.Location = new System.Drawing.Point(241, 252);
+            this.button22.Location = new System.Drawing.Point(253, 280);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(51, 42);
             this.button22.TabIndex = 54;
@@ -520,7 +529,7 @@
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button23.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button23.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button23.Location = new System.Drawing.Point(241, 202);
+            this.button23.Location = new System.Drawing.Point(253, 230);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(51, 42);
             this.button23.TabIndex = 53;
@@ -531,29 +540,104 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Menu;
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.radioButton5);
+            this.tabPage2.Controls.Add(this.radioButton11);
+            this.tabPage2.Controls.Add(this.radioButton10);
+            this.tabPage2.Controls.Add(this.radioButton8);
+            this.tabPage2.Controls.Add(this.radioButton7);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.radioButton6);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.ForeColor = System.Drawing.Color.Black;
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(358, 331);
+            this.tabPage2.Size = new System.Drawing.Size(391, 366);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "2 Стр";
             // 
-            // textBox2
+            // radioButton11
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Silver;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.Navy;
-            this.textBox2.Location = new System.Drawing.Point(13, 6);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(327, 39);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton11.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton11.Location = new System.Drawing.Point(32, 290);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(253, 28);
+            this.radioButton11.TabIndex = 66;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Преобразование строки";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton10.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton10.Location = new System.Drawing.Point(32, 256);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(239, 28);
+            this.radioButton10.TabIndex = 65;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Выделение подстроки";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton8.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton8.Location = new System.Drawing.Point(32, 222);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(137, 28);
+            this.radioButton8.TabIndex = 63;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Статистика";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton7.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton7.Location = new System.Drawing.Point(32, 188);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(279, 28);
+            this.radioButton7.TabIndex = 62;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Преобразовать в строчные";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.Silver;
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.ForeColor = System.Drawing.Color.Navy;
+            this.textBox3.Location = new System.Drawing.Point(37, 85);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox3.Size = new System.Drawing.Size(327, 39);
+            this.textBox3.TabIndex = 61;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton6.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton6.Location = new System.Drawing.Point(32, 154);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(289, 28);
+            this.radioButton6.TabIndex = 60;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Преобразовать в заглавные";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // label3
             // 
@@ -562,12 +646,65 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(13, 48);
+            this.label3.Location = new System.Drawing.Point(107, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(236, 24);
+            this.label3.Size = new System.Drawing.Size(159, 24);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Количество символов:0";
+            this.label3.Text = "Длина строки:0";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.Silver;
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.ForeColor = System.Drawing.Color.Navy;
+            this.textBox2.Location = new System.Drawing.Point(37, 21);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox2.Size = new System.Drawing.Size(327, 39);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton5.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton5.Location = new System.Drawing.Point(32, 322);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(234, 28);
+            this.radioButton5.TabIndex = 67;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Исправление ошибок";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Menu;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Navy;
+            this.label5.Location = new System.Drawing.Point(130, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 19);
+            this.label5.TabIndex = 69;
+            this.label5.Text = "Полученая строка";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Menu;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(140, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 19);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Введите строку";
             // 
             // IVANKOV19IT17
             // 
@@ -575,7 +712,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(354, 346);
+            this.ClientSize = new System.Drawing.Size(387, 384);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.OrangeRed;
@@ -632,6 +769,15 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
 
