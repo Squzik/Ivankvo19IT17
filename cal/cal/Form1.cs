@@ -314,7 +314,7 @@ namespace cal
             textBox3.Text = a;
         }
 
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        private void stats_CheckedChanged(object sender, EventArgs e)
         {
             int count = 0;
             //Подсчет цифр
@@ -324,14 +324,14 @@ namespace cal
                     count++;
             }
             //Подсчет гласных и согласных
-            string vowel = "уеыаоэяиёюУЕЫАОЭЯИЁЮ";
-            string consonant = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
+            string glasn = "уеыаоэяиёюУЕЫАОЭЯИЁЮ";
+            string soglasn = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
             int i=0, j=0; 
             //подсчитываем общее количество гласных и согласных 
             textBox2.Text.ToCharArray().All(z => {
-                if (vowel.ToCharArray().Contains(z)) i++;
+                if (glasn.ToCharArray().Contains(z)) i++;
                 else if
-            (consonant.ToCharArray().Contains(z)) j++; return true;});
+            (soglasn.ToCharArray().Contains(z)) j++; return true;});
             //Вывод
             MessageBox.Show
                 ($"Сколько строк:{((string[])textBox2.Lines).Length.ToString()} \n" +

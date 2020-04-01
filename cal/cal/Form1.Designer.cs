@@ -597,7 +597,7 @@
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Статистика";
             this.radioButton8.UseVisualStyleBackColor = true;
-            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.stats_CheckedChanged);
             // 
             // radioButton7
             // 
