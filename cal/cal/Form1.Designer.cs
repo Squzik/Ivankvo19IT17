@@ -62,6 +62,9 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -70,9 +73,6 @@
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -559,6 +559,46 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "2 Стр";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Menu;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(140, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 19);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Введите строку";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Menu;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Navy;
+            this.label5.Location = new System.Drawing.Point(130, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 19);
+            this.label5.TabIndex = 69;
+            this.label5.Text = "Полученая строка";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton5.ForeColor = System.Drawing.Color.Navy;
+            this.radioButton5.Location = new System.Drawing.Point(32, 322);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(234, 28);
+            this.radioButton5.TabIndex = 67;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Исправление ошибок";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
             // radioButton11
             // 
             this.radioButton11.AutoSize = true;
@@ -571,6 +611,7 @@
             this.radioButton11.TabStop = true;
             this.radioButton11.Text = "Преобразование строки";
             this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
             // 
             // radioButton10
             // 
@@ -652,7 +693,7 @@
             this.label3.Size = new System.Drawing.Size(159, 24);
             this.label3.TabIndex = 28;
             this.label3.Text = "Длина строки:0";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // textBox2
             // 
@@ -662,50 +703,10 @@
             this.textBox2.Location = new System.Drawing.Point(37, 21);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox2.Size = new System.Drawing.Size(327, 39);
             this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton5.ForeColor = System.Drawing.Color.Navy;
-            this.radioButton5.Location = new System.Drawing.Point(32, 322);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(234, 28);
-            this.radioButton5.TabIndex = 67;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Исправление ошибок";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Menu;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(130, 63);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 19);
-            this.label5.TabIndex = 69;
-            this.label5.Text = "Полученая строка";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Menu;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(140, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 19);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "Введите строку";
             // 
             // IVANKOV19IT17
             // 

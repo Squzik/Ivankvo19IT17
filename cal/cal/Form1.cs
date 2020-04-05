@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace cal
 {
+
+
+
+ 
     public partial class IVANKOV19IT17 : Form
     {
-        public double a, b,c;
+        public double a, b, c;
         public int temp;
+        public int count;
 
         public void obrabotka(string textBox1)
         {
@@ -24,12 +30,16 @@ namespace cal
             }
             catch (FormatException)
             {
-               
+
                 MessageBox.Show("Введено нечисловое значение!", "Ошибка");// исключение на ввод букв
             }
         }
-
-
+        public void obrabotka2()//Исправление ошибок
+        {
+            textBox3.Text = textBox2.Text.Replace("жы", "жи");
+            textBox3.Text = textBox2.Text.Replace("шы", "ши");
+        }
+      
         public IVANKOV19IT17()
         {
             InitializeComponent();
@@ -39,26 +49,26 @@ namespace cal
         {
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-                
-                textBox1.Clear();
-                textBox1.Focus();
-                temp = 1;
-     
-                label2.Text = $"{a}-";
-               
+
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 1;
+
+            label2.Text = $"{a}-";
+
         }
         //llll
         private void plus(object sender, EventArgs e)//Кнопка +
         {
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-               
-                textBox1.Clear();
-                textBox1.Focus();
-                temp = 2;            
-                label2.Text = $"{a}+";
 
-            
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 2;
+            label2.Text = $"{a}+";
+
+
         }
 
         private void ymnoj(object sender, EventArgs e)// Кнопка *
@@ -66,14 +76,14 @@ namespace cal
 
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-           
-                textBox1.Clear();
-                textBox1.Focus();
-                temp = 3;
-           
-           
-                label2.Text = $"{a}*";
-          
+
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 3;
+
+
+            label2.Text = $"{a}*";
+
 
         }
 
@@ -81,14 +91,14 @@ namespace cal
         {
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-                
-                textBox1.Clear();
-                textBox1.Focus();
-                temp = 4;
-          
-           
-                label2.Text = $"{a}/";
-            
+
+            textBox1.Clear();
+            textBox1.Focus();
+            temp = 4;
+
+
+            label2.Text = $"{a}/";
+
 
 
         }
@@ -97,7 +107,7 @@ namespace cal
 
         private void clear(object sender, EventArgs e)// Очистка
         {
-       
+
             textBox1.Clear();
             a = 0;
             b = 0;
@@ -111,21 +121,21 @@ namespace cal
             obrabotka(textBox1.Text);
 
             cal(temp);
-        
-            
-            
-             
-            
-          
+
+
+
+
+
+
 
         }
 
-      
+
 
         private void a1(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + "1";
-            
+
         }
 
         private void a2(object sender, EventArgs e)
@@ -145,7 +155,7 @@ namespace cal
 
         private void a5(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text +  "5";
+            textBox1.Text = textBox1.Text + "5";
         }
 
         private void a6(object sender, EventArgs e)
@@ -165,7 +175,7 @@ namespace cal
 
         private void a9(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "9" ;
+            textBox1.Text = textBox1.Text + "9";
         }
 
         private void a0(object sender, EventArgs e)
@@ -174,65 +184,65 @@ namespace cal
         }
 
 
- 
 
-       
+
+
         private void Ctg_Click(object sender, EventArgs e)
         {
 
 
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-                label2.Text = $"ctg:{a}";
-                textBox1.Clear();
-                temp = 8;
-          
-           
-                label2.Text = $"ctg:{a}";
-            
+            label2.Text = $"ctg:{a}";
+            textBox1.Clear();
+            temp = 8;
+
+
+            label2.Text = $"ctg:{a}";
+
         }
         private void Tg_Click(object sender, EventArgs e)
         {
 
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-              
-                textBox1.Clear();
-                temp = 7;
-                
-            
-           
-                label2.Text = $"tg:{a}";
-           
+
+            textBox1.Clear();
+            temp = 7;
+
+
+
+            label2.Text = $"tg:{a}";
+
         }
         private void Sin_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
 
             a = Convert.ToInt32(textBox1.Text);
-           
-                textBox1.Clear();
-                temp = 6;
-           
-               
-            
-                label2.Text = $"sin:{a}";
-            
+
+            textBox1.Clear();
+            temp = 6;
+
+
+
+            label2.Text = $"sin:{a}";
+
         }
         private void Cos_Click(object sender, EventArgs e)
         {
             obrabotka(textBox1.Text);
-            a = Convert.ToInt32(textBox1.Text); 
-                textBox1.Clear();
-                temp = 5;
-           
-           
-                label2.Text = $"cos:{a}";
-            
+            a = Convert.ToInt32(textBox1.Text);
+            textBox1.Clear();
+            temp = 5;
+
+
+            label2.Text = $"cos:{a}";
+
         }
-     
-  
-   
+
+
+
 
 
         private void sqrt_Click(object sender, EventArgs e)
@@ -240,11 +250,11 @@ namespace cal
             obrabotka(textBox1.Text);
 
             a = Convert.ToInt32(textBox1.Text);
-                textBox1.Clear();
-                temp = 13;
-           
-                label2.Text = $"√:{a}";
-           
+            textBox1.Clear();
+            temp = 13;
+
+            label2.Text = $"√:{a}";
+
 
         }
 
@@ -252,18 +262,18 @@ namespace cal
         {
             obrabotka(textBox1.Text);
             a = Convert.ToInt32(textBox1.Text);
-                textBox1.Clear();
-                temp = 15;
-           
-                label2.Text = $"x^2:{a}";
-            
+            textBox1.Clear();
+            temp = 15;
+
+            label2.Text = $"x^2:{a}";
+
         }
 
-   
-     
-        
 
-     
+
+
+
+
         private void bin_CheckedChanged(object sender, EventArgs e)
         {
             int i = Convert.ToInt32(textBox1.Text);
@@ -289,60 +299,77 @@ namespace cal
             textBox1.Text = Convert.ToString(i, 10);
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            
-           
-        }
+      
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)// подсчет длины строки
         {
 
             string a = textBox2.Text.Length.ToString();
             label3.Text = $"Длина строки:{a}";
         }
 
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)// кнопка преобразование в заглавные
         {
             string a = textBox2.Text.ToUpper().ToString();
             textBox3.Text = a;
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)// кнопка преобразование в строчные
         {
             string a = textBox2.Text.ToLower().ToString();
             textBox3.Text = a;
         }
 
-        private void stats_CheckedChanged(object sender, EventArgs e)
+        private void stats_CheckedChanged(object sender, EventArgs e)// Кнопка статистки
         {
-            int count = 0;
+
+            count = 0;
+
             //Подсчет цифр
             foreach (char ch in textBox2.Text)
             {
                 if (Char.IsDigit(ch))
                     count++;
             }
+
             //Подсчет гласных и согласных
             string glasn = "уеыаоэяиёюУЕЫАОЭЯИЁЮ";
             string soglasn = "цкнгшщзхфвпрлджчсмтбЦКНГШЩЗХФВПРЛДЖЧСМТБ";
-            int i=0, j=0; 
+            int i = 0, j = 0;
+
+
             //подсчитываем общее количество гласных и согласных 
             textBox2.Text.ToCharArray().All(z => {
                 if (glasn.ToCharArray().Contains(z)) i++;
                 else if
-            (soglasn.ToCharArray().Contains(z)) j++; return true;});
+            (soglasn.ToCharArray().Contains(z)) j++; return true; });
+
             //Вывод
             MessageBox.Show
                 ($"Сколько строк:{((string[])textBox2.Lines).Length.ToString()} \n" +
                 $"Сколько слов:{ textBox2.Text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length } \n" +
                 $"Сколько цифр:{count}\n" +
-                $"Гласных: {i}\n" +
-                $"Согласных: {j}", "Статистика:");
+                $"Сколько гласных: {i}\n" +
+                $"Сколько согласных: {j}", "Статистика:");
 
-            
+
 
         }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)// кнопка преобразование строки
+        {
+            textBox3.Text = textBox2.Text.Replace(" ", "!");
+
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)// кнопка исправление ошибок
+        {
+            obrabotka2();
+
+
+        }
+    
+    
 
         private void log_Click(object sender, EventArgs e)
         {
