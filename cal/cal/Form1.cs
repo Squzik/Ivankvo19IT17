@@ -18,9 +18,17 @@ namespace cal
     public partial class IVANKOV19IT17 : Form
     {
         public double a, b, c;
+        public int reg;
         public int temp;
         public int count;
-
+        string[] rum = new string[6] { "46-48", "48-50", "50-52", "52-54", "54-56", "56-58" };
+        string[] mejm = new string[6] { "S" ,   "M" ,  "L"  , "XL"  ,"XXL" ,"XXXL" };
+        string[] usam = new string[6] { "36-38"  ,  "38-40"  , "40-42" ,  "42-44"  , "44-46" ,  "46-48" };
+        string[] enm = new string[6] { "46-48", "48-50", "50-52", "52-54", "54-56", "56-58" };
+        string[] enj = new string[10] { "34", "36", "38", "40", "42", "44", "46", "48", "50", "52" };
+        string[] usaj = new string[10] { "6"  , "8" ,  "10" ,"12" , "14",  "16"  ,"18" , "20" , "22" , "24" };
+        string[] ruj = new string[10] { "40", "42", "44", "46", "48", "50", "52", "54", "56", "58" };
+        string[] mejj = new string[10] {"XS", "XS",  "S",  "M",  "M" , "L" ,"XL" ,"XL" ,"XXL" ,"XXXL"};
         public void obrabotka(string textBox1)
         {
             try
@@ -38,6 +46,8 @@ namespace cal
         {
             textBox3.Text = textBox2.Text.Replace("жы", "жи");
             textBox3.Text = textBox2.Text.Replace("шы", "ши");
+
+
         }
       
         public IVANKOV19IT17()
@@ -190,8 +200,8 @@ namespace cal
         private void Ctg_Click(object sender, EventArgs e)
         {
 
-
             obrabotka(textBox1.Text);
+
             a = Convert.ToInt32(textBox1.Text);
             label2.Text = $"ctg:{a}";
             textBox1.Clear();
@@ -199,7 +209,7 @@ namespace cal
 
 
             label2.Text = $"ctg:{a}";
-
+           
         }
         private void Tg_Click(object sender, EventArgs e)
         {
@@ -368,8 +378,182 @@ namespace cal
 
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (comboBox1.Text == "М")
+            {
+                comboBox3.Items.Clear();
+                comboBox2.Items.Clear();
+                comboBox2.Items.AddRange(new string[] { "Российские размеры"/* В БУДУЩЕМ, "Европейские размеры", "Международные размеры", "Размеры США"*/ });
+            
+
+
+            }
+            if (comboBox1.Text == "Ж")
+            {
+                comboBox2.Items.Clear();
+                comboBox3.Items.Clear();
+                comboBox2.Items.AddRange(new string[] { "Российские размеры"/*В БУДУЩЕМ, "Европейские размеры", "Международные размеры", "Размеры США"*/ });
+
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.Text == "М")
+            if (comboBox2.SelectedIndex == 0)
+            {
+                comboBox3.Items.Clear();
+                comboBox3.Items.AddRange(rum);
+            }
+            if(comboBox1.Text == "Ж")
+            if (comboBox2.SelectedIndex == 0)
+            {
+                comboBox3.Items.Clear();
+                comboBox3.Items.AddRange(ruj);
+            }
+
+            
+        }
+
     
-    
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Жен
+            if (comboBox1.Text == "Ж")
+            if (comboBox3.SelectedIndex == 0)
+            {
+                label7.Text = $"Международные размеры : {mejj[0]}\n" +
+                    $"Размеры США : {usaj[0]}\n" +
+                    $"Европейские размеры : {enj[0]}";
+            }
+            if (comboBox3.SelectedIndex == 1)
+            {
+                label7.Text = $"Международные размеры : {mejj[1]}\n" +
+                      $"Размеры США : {usaj[1]}\n" +
+                      $"Европейские размеры : {enj[1]}";
+            }
+            if (comboBox3.SelectedIndex == 2)
+            {
+                label7.Text = $"Международные размеры : {mejj[2]}\n" +
+                    $"Размеры США : {usaj[2]}\n" +
+                    $"Европейские размеры : {enj[2]}";
+            }
+            if (comboBox3.SelectedIndex == 3)
+            {
+                label7.Text = $"Международные размеры : {mejj[3]}\n" +
+                     $"Размеры США : {usaj[3]}\n" +
+                     $"Европейские размеры : {enj[3]}";
+            }
+            if (comboBox3.SelectedIndex == 4)
+            {
+                label7.Text = $"Международные размеры : {mejj[4]}\n" +
+                    $"Размеры США : {usaj[4]}\n" +
+                    $"Европейские размеры : {enj[4]}";
+            }
+            if (comboBox3.SelectedIndex == 5)
+            {
+                label7.Text = $"Международные размеры : {mejj[5]}\n" +
+                     $"Размеры США : {usaj[5]}\n" +
+                     $"Европейские размеры : {enj[5]}";
+            }
+            if (comboBox3.SelectedIndex == 6)
+            {
+                label7.Text = $"Международные размеры : {mejj[6]}\n" +
+                    $"Размеры США : {usaj[6]}\n" +
+                    $"Европейские размеры : {enj[6]}";
+            }
+            if (comboBox3.SelectedIndex == 7)
+            {
+                label7.Text = $"Международные размеры : {mejj[7]}\n" +
+                   $"Размеры США : {usaj[7]}\n" +
+                   $"Европейские размеры : {enj[7]}";
+            }
+            if (comboBox3.SelectedIndex == 8)
+            {
+                label7.Text = $"Международные размеры : {mejj[8]}\n" +
+                    $"Размеры США : {usaj[8]}\n" +
+                    $"Европейские размеры : {enj[8]}";
+            }
+            if (comboBox3.SelectedIndex == 9)
+            {
+                label7.Text = $"Международные размеры : {mejj[9]}\n" +
+                     $"Размеры США : {usaj[9]}\n" +
+                     $"Европейские размеры : {enj[9]}";     
+            }
+            //Муж
+            if (comboBox1.Text == "М")
+            if (comboBox3.SelectedIndex == 0)
+            {
+                label7.Text = $"Международные размеры : {mejm[0]}\n" +
+                    $"Размеры США : {usam[0]}\n" +
+                    $"Европейские размеры : {enm[0]}";
+            }
+            if (comboBox3.SelectedIndex == 1)
+            {
+                label7.Text = $"Международные размеры : {mejm[1]}\n" +
+                      $"Размеры США : {usam[1]}\n" +
+                      $"Европейские размеры : {enm[1]}";
+            }
+            if (comboBox3.SelectedIndex == 2)
+            {
+                label7.Text = $"Международные размеры : {mejm[2]}\n" +
+                    $"Размеры США : {usam[2]}\n" +
+                    $"Европейские размеры : {enm[2]}";
+            }
+            if (comboBox3.SelectedIndex == 3)
+            {
+                label7.Text = $"Международные размеры : {mejm[3]}\n" +
+                     $"Размеры США : {usam[3]}\n" +
+                     $"Европейские размеры : {enm[3]}";
+            }
+            if (comboBox3.SelectedIndex == 4)
+            {
+                label7.Text = $"Международные размеры : {mejm[4]}\n" +
+                    $"Размеры США : {usam[4]}\n" +
+                    $"Европейские размеры : {enm[4]}";
+            }
+            if (comboBox3.SelectedIndex == 5)
+            {
+                label7.Text = $"Международные размеры : {mejm[5]}\n" +
+                     $"Размеры США : {usam[5]}\n" +
+                     $"Европейские размеры : {enm[5]}";
+            }
+            if (comboBox3.SelectedIndex == 6)
+            {
+                label7.Text = $"Международные размеры : {mejm[6]}\n" +
+                    $"Размеры США : {usam[6]}\n" +
+                    $"Европейские размеры : {enm[6]}";
+            }
+            if (comboBox3.SelectedIndex == 7)
+            {
+                label7.Text = $"Международные размеры : {mejm[7]}\n" +
+                   $"Размеры США : {usam[7]}\n" +
+                   $"Европейские размеры : {enm[7]}";
+            }
+            if (comboBox3.SelectedIndex == 8)
+            {
+                label7.Text = $"Международные размеры : {mejm[8]}\n" +
+                    $"Размеры США : {usam[8]}\n" +
+                    $"Европейские размеры : {enm[8]}";
+            }
+            if (comboBox3.SelectedIndex == 9)
+            {
+                label7.Text = $"Международные размеры : {mejm[9]}\n" +
+                     $"Размеры США : {usam[9]}\n" +
+                     $"Европейские размеры : {enm[9]}";
+            }
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
         private void log_Click(object sender, EventArgs e)
         {
