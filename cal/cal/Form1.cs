@@ -1022,7 +1022,7 @@ namespace cal
             }
 
         }
-
+       // Вывод в файл
         private void button20_Click(object sender, EventArgs e)
         {
             FileStream file = new FileStream(@"D:\output.txt", FileMode.OpenOrCreate, FileAccess.Write);
@@ -1033,10 +1033,10 @@ namespace cal
 
 
         }
-
+        // Импорт из файл
         private void button21_Click(object sender, EventArgs e)
         {
-            string[] category = new string[5];
+            string[] category = new string[3];
 
             using (StreamReader read = File.OpenText(@"D:\input.txt"))
             {
