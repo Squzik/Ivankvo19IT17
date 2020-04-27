@@ -83,6 +83,8 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             tabPage1 = new System.Windows.Forms.TabPage();
             tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -717,6 +719,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.tabPage3.Controls.Add(this.button21);
+            this.tabPage3.Controls.Add(this.button20);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.label7);
@@ -806,6 +810,34 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button20.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button20.Location = new System.Drawing.Point(321, 12);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(51, 42);
+            this.button20.TabIndex = 55;
+            this.button20.Text = "output";
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button21.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button21.ForeColor = System.Drawing.Color.DarkOrange;
+            this.button21.Location = new System.Drawing.Point(321, 62);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(51, 42);
+            this.button21.TabIndex = 56;
+            this.button21.Text = "input";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // IVANKOV19IT17
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,6 +919,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
     }
 }
 
